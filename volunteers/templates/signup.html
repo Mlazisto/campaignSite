@@ -1,0 +1,42 @@
+{% extends 'base.html' %} {% load static %}
+
+<!-- Page title -->
+
+{% block title %}Volunteer Sign Up{% endblock %}
+
+<!-- Head section -->
+
+{% block extra_head %}
+<link rel="stylesheet" href="{% static 'signup.css' %}" />
+{% endblock %}
+
+<!-- Main body content -->
+
+{% block content %}
+
+<h1>Become A Volunteer</h1>
+
+<h4>Join our list of volunteers from all over the nation and become a major player in society.</h4>
+
+<form action="" method="POST">
+    {% csrf_token %}
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">First Name</label>
+        <input type="text" class="form-control" name="first_name" id="exampleInputEmail1" aria-describedby="emailHelp">
+        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Last Name</label>
+      <input type="text" class="form-control" name="last_name" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Email address</label>
+        <input type="email" class="form-control" name="email" id="exampleInputEmail1" aria-describedby="emailHelp">
+        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+{% endblock %}

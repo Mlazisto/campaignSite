@@ -1,0 +1,35 @@
+{% extends 'base.html' %} {% load static %}
+
+<!-- Page title -->
+
+{% block title %}Volunteers{% endblock %}
+
+<!-- Head section -->
+
+{% block extra_head %}
+<link rel="stylesheet" href="{% static 'volunteers.css' %}" />
+{% endblock %}
+
+<!-- Main body content -->
+
+{% block content %}
+
+<h1>Our Proud Volunteers</h1>
+
+<h4>Meet the people that that pledge to serve and assist their fellow community members.</h4>
+
+{% if volunteer_list %}
+<ul>
+    {% for volunteer in volunteer_list %}
+    <li>
+    <p>
+        {{ volunteer }}
+    </p>
+    </li>
+    {% endfor %}
+</ul>
+{% else %}
+<p>No volunteers yet.</p>
+{% endif %}
+
+{% endblock %}

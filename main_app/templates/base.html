@@ -1,0 +1,107 @@
+{% load static %}
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %}{% endblock %}</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="{% static 'base.css' %}">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+
+    {% block extra_head %}{% endblock %}
+  </head>
+  <body>
+
+<!-- Start of Navbar -->
+
+{% if user.is_authenticated %}
+
+<nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+  <div class="container-fluid navi">
+    <a class="navbar-brand" href="#">Hype Coder Dev Campaign</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link" href="{% url 'home' %}">Home</a>
+        <a class="nav-link" href="{% url 'volunteers:volunteers' %}">Volunteers</a>
+        <a class="nav-link" href="{% url 'volunteers:signup' %}">Be A Volunteer</a>
+        <a class="nav-link navi" href="{% url 'logout' %}?next={% url 'home' %}">Logout</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+{% else %}
+
+<nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+  <div class="container-fluid navi">
+    <a class="navbar-brand" href="#">Hype Coder Dev Campaign</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link" href="{% url 'home' %}">Home</a>
+        <a class="nav-link" href="{% url 'volunteers:volunteers' %}">Volunteers</a>
+        <a class="nav-link" href="{% url 'volunteers:signup' %}">Be A Volunteer</a>
+        <a class="nav-link navi" href="{% url 'user_auth:register' %}">Join Us</a>
+        <a class="nav-link navi" href="{% url 'user_auth:login' %}">Login</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+{% endif %}
+
+    
+
+<!-- End of Navbar -->
+
+<!-- Start of Main content -->
+
+    <div class="container pt-5 pb-5">
+      {% block content %}{% endblock %}
+    </div> 
+
+<!-- End of Main content -->
+
+<!-- Start of footer -->
+
+    <footer class="bg-dark border-top pt-5 pb-4">
+        <div class="container text-md-left">
+            <div class="row text-md-left">
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Our Values</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ducimus accusamus 
+                        quidem maiores doloribus, molestiae, laboriosam nobis excepturi eaque deleniti 
+                        adipisci incidunt eos perspiciatis sapiente. Eveniet eaque adipisci labore 
+                        praesentium?</p>    
+                </div>
+
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Contact</h5>
+                    <p><i class="fas fa-home mr-3"></i>Cape Town, South Africa</p>
+                    <p><i class="fas fa-envelope mr-3"></i>lbucwa08@gmail.com</p>
+                    <p><i class="fas fa-phone mr-3"></i>+27 840647527</p>
+                    <p><i class="fa-brands fa-twitter mr-3"></i>@HypeCoderDev</p>    
+                </div>
+            </div>
+            <hr class="mb-4">
+        </div>
+        
+        <div class="copy text-center"><p>Hype Coder Dev - Your Coding Political Candidate. Copyright &copy; 2023. All Rights Reserved by: Lazola Bucwa</p></div>
+    </footer>
+
+    <!-- End of footer -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  </body>
+</html>
