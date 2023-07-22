@@ -19,7 +19,7 @@
 <h4>Meet the people that that pledge to serve and assist their fellow community members.</h4>
 
 {% if volunteer_list %}
-<ul>
+<ol>
     {% for volunteer in volunteer_list %}
     <li>
     <p>
@@ -27,7 +27,7 @@
     </p>
     </li>
     {% endfor %}
-</ul>
+</ol>
 {% else %}
 <p>No volunteers yet.</p>
 {% endif %}
