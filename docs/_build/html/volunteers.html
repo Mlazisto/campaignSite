@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>volunteers package &mdash; mysite 1.0 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/sphinx_highlight.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="volunteers.migrations package" href="volunteers.migrations.html" />
+    <link rel="prev" title="user_auth.migrations package" href="user_auth.migrations.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            mysite
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">campaignSite</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="main_app.html">main_app package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="manage.html">manage module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="mysite.html">mysite package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="user_auth.html">user_auth package</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">volunteers package</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#subpackages">Subpackages</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="volunteers.migrations.html">volunteers.migrations package</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#submodules">Submodules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-volunteers.admin">volunteers.admin module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-volunteers.apps">volunteers.apps module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#volunteers.apps.VolunteersConfig"><code class="docutils literal notranslate"><span class="pre">VolunteersConfig</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#module-volunteers.models">volunteers.models module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#volunteers.models.Volunteer"><code class="docutils literal notranslate"><span class="pre">Volunteer</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#module-volunteers.tests">volunteers.tests module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-volunteers.urls">volunteers.urls module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-volunteers.views">volunteers.views module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#volunteers.views.signup_view"><code class="docutils literal notranslate"><span class="pre">signup_view()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#volunteers.views.volunteers_view"><code class="docutils literal notranslate"><span class="pre">volunteers_view()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#module-volunteers">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">mysite</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="modules.html">campaignSite</a></li>
+      <li class="breadcrumb-item active">volunteers package</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/volunteers.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="volunteers-package">
+<h1>volunteers package<a class="headerlink" href="#volunteers-package" title="Permalink to this heading"></a></h1>
+<section id="subpackages">
+<h2>Subpackages<a class="headerlink" href="#subpackages" title="Permalink to this heading"></a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="volunteers.migrations.html">volunteers.migrations package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="volunteers.migrations.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="volunteers.migrations.html#module-volunteers.migrations.0001_initial">volunteers.migrations.0001_initial module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="volunteers.migrations.html#volunteers.migrations.0001_initial.Migration"><code class="docutils literal notranslate"><span class="pre">Migration</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="volunteers.migrations.html#volunteers.migrations.0001_initial.Migration.dependencies"><code class="docutils literal notranslate"><span class="pre">Migration.dependencies</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="volunteers.migrations.html#volunteers.migrations.0001_initial.Migration.initial"><code class="docutils literal notranslate"><span class="pre">Migration.initial</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="volunteers.migrations.html#volunteers.migrations.0001_initial.Migration.operations"><code class="docutils literal notranslate"><span class="pre">Migration.operations</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="volunteers.migrations.html#module-volunteers.migrations">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this heading"></a></h2>
+</section>
+<section id="module-volunteers.admin">
+<span id="volunteers-admin-module"></span><h2>volunteers.admin module<a class="headerlink" href="#module-volunteers.admin" title="Permalink to this heading"></a></h2>
+</section>
+<section id="module-volunteers.apps">
+<span id="volunteers-apps-module"></span><h2>volunteers.apps module<a class="headerlink" href="#module-volunteers.apps" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="volunteers.apps.VolunteersConfig">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">volunteers.apps.</span></span><span class="sig-name descname"><span class="pre">VolunteersConfig</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">app_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">app_module</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/volunteers/apps.html#VolunteersConfig"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#volunteers.apps.VolunteersConfig" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">AppConfig</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="volunteers.apps.VolunteersConfig.default_auto_field">
+<span class="sig-name descname"><span class="pre">default_auto_field</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'django.db.models.BigAutoField'</span></em><a class="headerlink" href="#volunteers.apps.VolunteersConfig.default_auto_field" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="volunteers.apps.VolunteersConfig.name">
+<span class="sig-name descname"><span class="pre">name</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'volunteers'</span></em><a class="headerlink" href="#volunteers.apps.VolunteersConfig.name" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-volunteers.models">
+<span id="volunteers-models-module"></span><h2>volunteers.models module<a class="headerlink" href="#module-volunteers.models" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="volunteers.models.Volunteer">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">volunteers.models.</span></span><span class="sig-name descname"><span class="pre">Volunteer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/volunteers/models.html#Volunteer"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#volunteers.models.Volunteer" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Model</span></code></p>
+<p>Model representing a Volunteer.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>first_name</strong> (<em>str</em>) – First name of the volunteer.</p></li>
+<li><p><strong>last_name</strong> (<em>str</em>) – Last name of the volunteer.</p></li>
+<li><p><strong>email</strong> (<em>str</em>) – Email address of the volunteer.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A string representation of the Volunteer object, displaying their full name.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+<dl class="py exception">
+<dt class="sig sig-object py" id="volunteers.models.Volunteer.DoesNotExist">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">DoesNotExist</span></span><a class="headerlink" href="#volunteers.models.Volunteer.DoesNotExist" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">ObjectDoesNotExist</span></code></p>
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="volunteers.models.Volunteer.MultipleObjectsReturned">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">MultipleObjectsReturned</span></span><a class="headerlink" href="#volunteers.models.Volunteer.MultipleObjectsReturned" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">MultipleObjectsReturned</span></code></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="volunteers.models.Volunteer.email">
+<span class="sig-name descname"><span class="pre">email</span></span><a class="headerlink" href="#volunteers.models.Volunteer.email" title="Permalink to this definition"></a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="volunteers.models.Volunteer.first_name">
+<span class="sig-name descname"><span class="pre">first_name</span></span><a class="headerlink" href="#volunteers.models.Volunteer.first_name" title="Permalink to this definition"></a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="volunteers.models.Volunteer.id">
+<span class="sig-name descname"><span class="pre">id</span></span><a class="headerlink" href="#volunteers.models.Volunteer.id" title="Permalink to this definition"></a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="volunteers.models.Volunteer.last_name">
+<span class="sig-name descname"><span class="pre">last_name</span></span><a class="headerlink" href="#volunteers.models.Volunteer.last_name" title="Permalink to this definition"></a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="volunteers.models.Volunteer.objects">
+<span class="sig-name descname"><span class="pre">objects</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;django.db.models.manager.Manager</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#volunteers.models.Volunteer.objects" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-volunteers.tests">
+<span id="volunteers-tests-module"></span><h2>volunteers.tests module<a class="headerlink" href="#module-volunteers.tests" title="Permalink to this heading"></a></h2>
+</section>
+<section id="module-volunteers.urls">
+<span id="volunteers-urls-module"></span><h2>volunteers.urls module<a class="headerlink" href="#module-volunteers.urls" title="Permalink to this heading"></a></h2>
+</section>
+<section id="module-volunteers.views">
+<span id="volunteers-views-module"></span><h2>volunteers.views module<a class="headerlink" href="#module-volunteers.views" title="Permalink to this heading"></a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="volunteers.views.signup_view">
+<span class="sig-prename descclassname"><span class="pre">volunteers.views.</span></span><span class="sig-name descname"><span class="pre">signup_view</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/volunteers/views.html#signup_view"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#volunteers.views.signup_view" title="Permalink to this definition"></a></dt>
+<dd><p>View function to handle user signup and save the submitted form data.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>request</strong> (<em>django.http.HttpRequest</em>) – HttpRequest object representing the incoming request from the user.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>HttpResponse object representing the response to redirect the user to the ‘home’ page upon successful signup,
+or render the ‘signup.html’ template with an empty form for GET requests.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>django.http.HttpResponse</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="volunteers.views.volunteers_view">
+<span class="sig-prename descclassname"><span class="pre">volunteers.views.</span></span><span class="sig-name descname"><span class="pre">volunteers_view</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/volunteers/views.html#volunteers_view"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#volunteers.views.volunteers_view" title="Permalink to this definition"></a></dt>
+<dd><p>View function to display a list of volunteers.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>request</strong> (<em>django.http.HttpRequest</em>) – HttpRequest object representing the incoming request from the user.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>HttpResponse object representing the rendered response containing the list of volunteers.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>django.http.HttpResponse</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-volunteers">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-volunteers" title="Permalink to this heading"></a></h2>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="user_auth.migrations.html" class="btn btn-neutral float-left" title="user_auth.migrations package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="volunteers.migrations.html" class="btn btn-neutral float-right" title="volunteers.migrations package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Lazola Bucwa.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
